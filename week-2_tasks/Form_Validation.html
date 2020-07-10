@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> APPLICATION FORM </title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style>
+		body
+		{
+
+			padding-bottom:50px;
+			padding-left:10px;
+			padding-right:10px;
+			padding-top:10px;
+			margin-right:700px;
+			margin-left:400px;
+			margin-top:30px;
+			box-sizing: border-box;
+
+
+		}
+		
+	</style>
+</head>
+<body Onload=document.forms[0].elements[0].focus();>
+	<div class="lit">
+
+<div class="container"><br><h1>Application Form</h1><br>
+		<form name="validation" action="success.html" method="" onSubmit="return verify(this.form)" >
+
+
+	<div class="form-group">
+		  <div class="col-sm-4">
+					<input type="text" placeholder="Name" class="form-control" id="name">
+				</div></div><br><br><br>
+				<div class="form-group">
+					<div class="col-sm-4">
+			<input type="text" placeholder="E-mail"class="form-control" id="email"></div></div><br><br>
+			<div class="form-group">
+				<div class="col-sm-4">
+			<input type="password" placeholder="Password"class="form-control" id="password"></div></div><br><br>
+		
+			<div class="col-sm-4">
+						<label for="optradio" value="">Gender:</label>&nbsp;&nbsp;&nbsp;
+			<label class="radio-inline"><input type="radio" name="optradio" id="m">Male</label>
+<label class="radio-inline"><input type="radio" name="optradio" id="f">Female</label>
+<label class="radio-inline"><input type="radio" name="optradio" id="o">Other</label></div><br><br>
+<tr>
+  <td align="center"><h5>State:</h5></td>
+  <td>
+  <select name="select">
+  <option>Andhra pradesh</option>
+  <option selected>Arunachal pradesh</option>
+  <option>Tamilnadu</option>
+  <option>karnataka</option>
+  <option>kerala</option></select><br><br><br></tr>
+  
+  <div class="col-sm-4">
+						<label for="optradio" value="">Qualification:</label>&nbsp;&nbsp;&nbsp;
+			<label class="radio-inline"><input type="radio" name="optradio" id="m">SSC</label>
+<label class="radio-inline"><input type="radio" name="optradio" id="f">INTER</label>
+<label class="radio-inline"><input type="radio" name="optradio" id="o">B.TECH</label>
+<label class="radio-inline"><input type="radio" name="optradio" id="f">M.TECH</label>
+<label class="radio-inline"><input type="radio" name="optradio" id="f">M.Sc</label>
+
+</div><br>
+  <br>
+  
+ 
+ <tr>
+ 
+ <br>
+  <td align="center">File upload:
+  <select name="choose file" value="choose file"></select>
+  <input type="file" name="fileupload" value="fileupload" id="fileupload"> </td><br></tr>
+<div class="form-group">
+	<div class="col-sm-4">
+<textarea class="form-control" rows="5" id="comment" placeholder="Describe Yourself"></textarea></div></div><br><br><br><br><br><br>
+			<div class="form-group">
+				<div class="col-sm-4">
+
+			<input type="text" placeholder="Phone number"class="form-control" id="phn"></div>
+</div><br><br>
+<div class="col-sm-4">
+<center>
+<tr >
+  <td >
+  <button type ="submit" value="submit" class="btn btn-success" >Submit</button>
+  </td>
+  <td >
+  <button type ="reset" value="reset" class="btn btn-success">Reset</button>
+  </td>
+  <td>
+  <button type="button"  class="btn btn-success" >cancel</button></td>
+ </tr>
+</center>
+</div>
+		</form></div></div>
+		<script src="alltasks.js"></script>
+		</body>
+</html> 
