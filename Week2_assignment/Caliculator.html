@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style></style>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+	body
+	{
+	    padding:1000 1000 1000 1000;
+		background-color:pink;
+	}
+</style>
+</head>
+<script src="alltasks.js"></script>
+
+
+<script type="text/javascript" src="alltasks.js"></script> 
+	<link rel="stylesheet" type="text/css" href="calcii.css">
+</head> 
+<body id="grad1">
+
+<div class="container">
+
+	<br><br><center><h1>Calculator</h1></center>
+
+<table class="table table-bordered">
+	<form class="form-group" name="cal">
+	<tr class="active"><td colspan="4"><input type="text" class="form-control" placeholder="Enter number n1"  id="a" name="a" ></td></tr>
+	<tr class="active"><td colspan="4"><input type="text" class="form-control" placeholder="Enter number n2"  id="b" name="b" ></td></tr>
+	<tr class="danger"><td><button class="btn btn-success" onclick='document.getElementById("demo").innerHTML = add(document.cal.a.value,document.cal.b.value);return false;'>+</td><td><button class="btn btn-success" onclick='document.getElementById("demo").innerHTML = sub(document.cal.a.value,document.cal.b.value);return false;'>-</td><td><button class="btn btn-success" onclick='document.getElementById("demo").innerHTML = mul(document.cal.a.value,document.cal.b.value);return false;'>*</td><td><button class="btn btn-success" onclick='document.getElementById("demo").innerHTML = mod(document.cal.a.value);return false;'>Absolute</td></tr><br><br>
+		<tr class="danger" ><td><button class="btn btn-success" onclick='document.getElementById("demo").innerHTML = div(document.cal.a.value,document.cal.b.value);return false;'>/</td><td><button class="btn btn-success" onclick='document.getElementById("demo").innerHTML = percent(document.cal.a.value,document.cal.b.value);return false;'>%</td><td><button class="btn btn-success" onclick='document.getElementById("demo").innerHTML = sqrt(document.cal.a.value);document.cal.b.disabled=true;return false;'>Square Root</td><td><button class="btn btn-success" onclick='document.getElementById("demo").innerHTML = pow(document.cal.a.value,document.cal.b.value);return false;'>Power</td></tr>
+			<tr class="warning"><td colspan="4"><h4 id="demo" name="p1">after operation then result will be there</h4></td></tr>
+</form>
+
+</table>
+<table border="1"> 
+		<tr> 
+			<td colspan="4"><input type="text" id="result"/></td> 
+
+
+		</tr> 
+		<tr> 
+
+			<td><input type="button" value="1" onclick="displayy('1')"/> </td> 
+			<td><input type="button" value="2" onclick="displayy('2')"/> </td> 
+			<td><input type="button" value="3" onclick="displayy('3')"/> </td> 
+            <td><input type="button" id="solvee" value="c" onclick="clr()"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4" onclick="displayy('4')"/> </td> 
+			<td><input type="button" value="5" onclick="displayy('5')"/> </td> 
+			<td><input type="button" value="6" onclick="displayy('6')"/> </td> 
+			<td><input type="button" value="-" onclick="displayy('-')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7" onclick="displayy('7')"/> </td> 
+			<td><input type="button" value="8" onclick="displayy('8')"/> </td> 
+			<td><input type="button" value="9" onclick="displayy('9')"/> </td> 
+			<td><input type="button" value="+" onclick="dis('+')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="." onclick="displayy('.')"/> </td> 
+			<td><input type="button" value="0" onclick="displayy('0')"/> </td> 
+			<!-- solve function call function solve to evaluate value -->
+            <td><input type="button" value="%" onclick="displayy('%')"/> </td>
+			<td><input type="button" value="*" onclick="displayy('*')"/> </td> 
+		</tr> 
+        <tr>
+        <td><input type="button" value="*" onclick="displayy('*')"/> </td> 
+        <td><input type="button" value="√" onclick="root()"/> </td>
+        <td><input type="button" value="/" onclick="displayy('/')"/> </td> 
+        <td><input type="button" id="solvee" value="=" onclick="solve()"/> </td> 
+        </tr>
+	</table> 
+    </center>
+
+</div>
+
+    
+	
+
+
+</body>
+</html> 

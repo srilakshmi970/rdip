@@ -1,0 +1,33 @@
+	.title{ 
+		margin-bottom: 1px; 
+		text-align:center; 
+		width: 170px; 
+		color:green; 
+		border: solid black 2px; 
+		} 
+        input[type=button]:hover {
+        background-color: #45a049;
+        }
+		input[type="button"] 
+		{ 
+		background-color:darkcyan; 
+		color: black; 
+		border: solid black 5px; 
+		width:100% 
+		} 
+
+		input[type="text"] 
+		{ 
+		background-color:white; 
+		border: solid black 5px; 
+		width:100% 
+		} 
+
+        input[#slovee]:hover {
+        background-color: #F3182F;
+        }
+#grad1 {
+  height: 55px;
+  background-color: red; 
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
+} 
